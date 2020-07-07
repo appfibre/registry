@@ -1,0 +1,7 @@
+{
+    "$schema": "http://registry.appfibre.org/schema/config.json#2",
+    "plugins": {
+        "$": "http://cdnjs.appfibre.org/cjs/plugins-core.js"
+    }
+
+}

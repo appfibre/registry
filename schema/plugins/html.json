@@ -1,0 +1,96 @@
+{
+    "$id": "http://registry.appfibre.org/draft-01/html.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "HTML",
+    "type": "object",
+    "properties": {
+        "$html": {
+            "$ref": "http://registry.appfibre.org/draft-01/html.json#/definitions/children#"
+        }
+    },
+    "additionalProperties": false,
+    "definitions": {
+        "children": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/elements"
+            }
+        },
+        "elements": {
+            "type":"array",
+            "anyOf" : [ { "$ref": "#/definitions/div" }, { "$ref": "#/definitions/table" } ],
+            "minItems": 0
+        },
+        "element": {
+            "type":"array",
+            "items": [
+                { "type": "string", "enum": ["div", "table"] }
+                , { "type": "object" }
+            ],
+            "minItems": 0
+        }, "a": {
+            "type":"array",
+            "items": [
+                { "type": "string", "const": "div" }
+                , { "type": "object", "properties": {
+                    "border": {"type": "string" }                    
+                } }
+                ,  { "$ref": "#/definitions/element" }
+            ]
+        }
+        , "div": {
+            "type":"array",
+            "items": [
+                { "type": "string", "const": "div" }
+                , { "type": "object", "properties": {
+                    "border": {"type": "string" } , "style": {"type": "string" }                     
+                } }
+                , {"anyOf": [{"$ref": "#/definitions/elements" }, {"type": "string"}, { "$ref": "http://registry.appfibre.org/draft-01/schema.json#" } ]}
+            ]
+        }, "table": {
+            "type":"array",
+            "items": [
+                  { "type": "string", "const": "table" }
+                , { "type": "object", "properties": { "border": {"type": "string"}, "additionalProperties": true } }
+                , { "type": "array", "items": [ { "anyOf": [ { "$ref": "#/definitions/tr" } ] } ] }
+            ]
+        }, "tr": {
+            "type":"array",
+            "items": [
+                { "type": "string", "const": "tr" }
+                , { "type": "object", "properties": { } }
+                , { "type": "array", "items": [ { "anyOf": [ { "$ref": "#/definitions/td" } ] } ] }
+            ]
+        }, "td": {
+            "type":"array",
+            "items": [
+                { "type": "string", "const": "td" }
+                , { "type": "object", "properties": { } }
+                , { "type": "array", "items": [ { "allOf": [ { "$ref": "#/definitions/elements" } ] } ] }
+            ]
+        },
+
+
+        "_HTMLElement": {
+            "type": "object",
+            "properties": {
+                "accessKey": {"type": "string"},
+                "autocapitalize": {"type": "string"},
+                "dir": {"type": "string"},
+                "draggable": {"type": "boolean"},
+                "hidden": {"type": "boolean"},
+                "innerText": {"type": "string"},
+                "lang": {"type": "string"},
+                "spellcheck": {"type": "boolean"},
+                "title": {"type": "string"},
+                "translate": {"type": "boolean"}
+            }
+        },
+        "_HTMLHyperlinkElementUtils": {
+            "properties": {
+
+            }
+        }
+    } 
+}  
+  

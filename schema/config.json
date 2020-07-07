@@ -1,0 +1,19 @@
+{
+    "$id": "http://registry.appfibre.org/host/node/config.json#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "JSON configuration for node host",
+    "type": "object",
+      "properties": {
+        "$schema": { "type" : "string" },
+        "plugins": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^\\$.*": {"type": "string"}
+          }
+        }
+      }
+      ,
+      "additionalProperties": false
+    }  
+  
