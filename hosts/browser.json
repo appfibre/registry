@@ -1,0 +1,14 @@
+{
+    "$schema": "http://registry.appfibre.org/schema/config.json#17",
+    "plugins": {
+          "$": {
+              "processors": {
+              "main": [
+                  { "src": "http://cdnjs.appfibre.org/umd/plugins-core.js#core", "module": "UMD" }
+                , { "src": "http://cdnjs.appfibre.org/umd/plugins-core.js#core", "module": "CommonJS" }
+                , { "src": "http://cdnjs.appfibre.org/plugins-core.js#core", "module": "IIFE" } 
+                ]
+            }
+        }
+    }
+}

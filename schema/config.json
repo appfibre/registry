@@ -9,11 +9,37 @@
           "type": "object",
           "additionalProperties": false,
           "patternProperties": {
-            "^\\$.*": {"type": "string"}
+            "^\\$.*": { "$ref": "#/definitions/plugin_definition" }
           }
         }
-      }
-      ,
+    }, "definitions": {
+      "plugin_definition": {
+        "type": "object",
+        "properties": {
+          "schema": {"type": "string" },
+          "version": {"type": "string"},
+          "processors": {"type": "object", "patternProperties": {"[^.]": {"type": "array", "items": {"$ref": "#/definitions/component_definition"}}}}
+        }, "additionalProperties": false
+      },
+      "component_definition": {
+        "type": "object",
+        "properties": {
+          "platforms": { "anyOf": [ {"type": "array", "itesm": {"$ref": "#/definitions/platform"}}, {"$ref": "#/definitions/platform"} ] }
+          , "module": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/modulesystem"}}, {"$ref": "#/definitions/modulesystem"} ] }
+          , "requires": { "anyOf": [ {"type": "string", "items": {"type": "string"}}, {"type": "string"} ] }
+          , "src": { "type": "string"}
+        },
+        "required": ["src", "module"]
+      },
+      "platform": {
+          "type": "string"
+        , "enum": ["Windows","Ubuntu","Debian","RedHat","CentOS","OSX","IBM"]
+      },
+      "modulesystem": {
+        "type": "string"
+        , "enum": ["ES","CommonJS","AMD","UMD","IIFE"]
+      },
       "additionalProperties": false
     }  
+}
   

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://registry.appfibre.org/schema/config.json#17",
+    "plugins": {
+          "$": {
+              "processors": {
+                "default": [
+                    { "src": "http://cdnjs.appfibre.org/cjs/plugins-server.js#core", "module": "CommonJS" }
+                    , { "src": "http://cdnjs.appfibre.org/es/plugins-server.js#core", "module": "ES" } 
+                ]
+            }
+          }
+        , "$server": {
+            "processors": {
+                "default": [{ "src": "http://cdnjs.appfibre.org/cjs/plugins-server.js#server", "module": "CommonJS" }]
+            }
+        }
+        , "$mssql": {
+            "processors": {
+                "default": [{ "src": "http://cdnjs.appfibre.org/cjs/plugins-mssql.js", "module": "CommonJS" }]
+            }
+        }
+    }
+
+}
