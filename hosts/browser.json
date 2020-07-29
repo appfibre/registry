@@ -1,5 +1,5 @@
 {
-    "$schema": "http://registry.appfibre.org/schema/config.json#17",
+    "$schema": "http://registry.appfibre.org/schema/config.json#19",
     "plugins": {
           "$": {
               "processors": {
@@ -10,5 +10,7 @@
                 ]
             }
         }
+    }, "settings": {
+        "transform": ["application/jst", "application/json"]
     }
 }

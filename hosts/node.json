@@ -1,5 +1,5 @@
 {
-    "$schema": "http://registry.appfibre.org/schema/config.json#17",
+    "$schema": "http://registry.appfibre.org/schema/config.json#19",
     "plugins": {
           "$": {
               "processors": {
@@ -16,9 +16,19 @@
         }
         , "$mssql": {
             "processors": {
-                "default": [{ "src": "http://cdnjs.appfibre.org/cjs/plugins-mssql.js", "module": "CommonJS" }]
+                "default": [
+                    { "src": "http://cdnjs.appfibre.org/cjs/plugins-mssql.js"
+                    , "module": "CommonJS" 
+                    , "requifres": ["events", "punycode", "string_decoder", "stream", "tty", "os", "url", "buffer", "crypto", "tls", "http", "htps", "assert", "zlib", "path", "fs", "net", "timers", "querystring", "child_process", "dgram", "dns", "util"
+                        , "readable-stream", "xmlbuilder", "sshpk"]
+                    }
+                ]
             }
         }
+    },
+    "settings": {
+        "transform": "application/jst"
     }
+    
 
 }

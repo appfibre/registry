@@ -10,6 +10,12 @@
           "additionalProperties": false,
           "patternProperties": {
             "^\\$.*": { "$ref": "#/definitions/plugin_definition" }
+          }          
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "transform": { "anyOf": [ {"type": "array", "items": {"type": "string"}}, {"type": "string"} ] }
           }
         }
     }, "definitions": {
@@ -26,7 +32,7 @@
         "properties": {
           "platforms": { "anyOf": [ {"type": "array", "itesm": {"$ref": "#/definitions/platform"}}, {"$ref": "#/definitions/platform"} ] }
           , "module": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/modulesystem"}}, {"$ref": "#/definitions/modulesystem"} ] }
-          , "requires": { "anyOf": [ {"type": "string", "items": {"type": "string"}}, {"type": "string"} ] }
+          , "requires": { "anyOf": [ {"type": "array", "items": {"type": "string"}}, {"type": "string"} ] }
           , "src": { "type": "string"}
         },
         "required": ["src", "module"]
