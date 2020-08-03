@@ -1,0 +1,11 @@
+{   "$schema": "http://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$MSSQL TODO",
+    "processors": {
+        "default": [
+            { "src": "../plugins/tedious/dist/tedious-cjs.js"
+            , "module": "CommonJS" 
+            , "requifres": ["events", "punycode", "string_decoder", "stream", "tty", "os", "url", "buffer", "crypto", "tls", "http", "htps", "assert", "zlib", "path", "fs", "net", "timers", "querystring", "child_process", "dgram", "dns", "util", "readable-stream", "xmlbuilder", "sshpk"]
+            }
+        ]
+    }
+}

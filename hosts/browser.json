@@ -1,12 +1,12 @@
 {
-    "$schema": "http://registry.appfibre.org/schema/config.json#19",
+    "$schema": "http://registry.appfibre.org/schema/config.json#20",
     "plugins": {
           "$": {
               "processors": {
-              "main": [
-                  { "src": "http://cdnjs.appfibre.org/umd/plugins-core.js#core", "module": "UMD" }
-                , { "src": "http://cdnjs.appfibre.org/umd/plugins-core.js#core", "module": "CommonJS" }
-                , { "src": "http://cdnjs.appfibre.org/plugins-core.js#core", "module": "IIFE" } 
+              "default": [
+                  { "src": "http://cdnjs.appfibre.org/bundles/umd/plugins-core.js#core", "module": "UMD" }
+                , { "src": "http://cdnjs.appfibre.org/bundles/cjs/plugins-core.js#core", "module": "CommonJS" }
+                , { "src": "http://cdnjs.appfibre.org/bundles/plugins-core.js#core", "module": "IIFE" } 
                 ]
             }
         }
