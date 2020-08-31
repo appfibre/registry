@@ -1,11 +1,11 @@
 {
-    "$id": "http://registry.appfibre.org/draft-01/html.json",
+    "$id": "http://registry.appfibre.org/schema/plugins/html.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "HTML",
     "type": "object",
     "properties": {
         "$html": {
-            "$ref": "http://registry.appfibre.org/draft-01/html.json#/definitions/children#"
+            "$ref": "#/definitions/element#"
         }
     },
     "additionalProperties": false,
@@ -45,7 +45,7 @@
                 , { "type": "object", "properties": {
                     "border": {"type": "string" } , "style": {"type": "string" }                     
                 } }
-                , {"anyOf": [{"$ref": "#/definitions/elements" }, {"type": "string"}, { "$ref": "http://registry.appfibre.org/draft-01/schema.json#" } ]}
+                , {"anyOf": [{"$ref": "#/definitions/elements" }, {"type": "string"}, { "$ref": "http://registry.appfibre.org/schema/jst.json#/" } ]}
             ]
         }, "table": {
             "type":"array",

@@ -7,13 +7,14 @@
         "$schema": {"type": "string" },
         "schema": {"type": "string" },
         "version": {"type": "string"},
+        "tests": {"$ref": "#/definitions/test_definition"},
         "processors": {"type": "object", "patternProperties": {"[^.]": {"type": "array", "items": {"$ref": "#/definitions/component_definition"}}}}
     },
     "definitions": {
         "component_definition": {
             "type": "object",
             "properties": {
-              "platforms": { "anyOf": [ {"type": "array", "itesm": {"$ref": "#/definitions/platform"}}, {"$ref": "#/definitions/platform"} ] }
+              "platforms": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/platform"}}, {"$ref": "#/definitions/platform"} ] }
               , "module": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/modulesystem"}}, {"$ref": "#/definitions/modulesystem"} ] }
               , "requires": { "anyOf": [ {"type": "array", "items": {"type": "string"}}, {"type": "string"} ] }
               , "src": { "type": "string"}
@@ -27,7 +28,12 @@
           "modulesystem": {
             "type": "string"
             , "enum": ["ES","CommonJS","AMD","UMD","IIFE"]
+          },
+          "test_definition" : {
+            "name": {"type": "string"},
+            "src": {"type": "string"}
           }
     }
+    , "required": ["schema", "processors"]
     , "additionalProperties": false
 }

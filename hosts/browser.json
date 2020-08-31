@@ -4,9 +4,9 @@
           "$": {
               "processors": {
               "default": [
-                  { "src": "http://cdnjs.appfibre.org/bundles/umd/plugins-core.js#core", "module": "UMD" }
-                , { "src": "http://cdnjs.appfibre.org/bundles/cjs/plugins-core.js#core", "module": "CommonJS" }
-                , { "src": "http://cdnjs.appfibre.org/bundles/plugins-core.js#core", "module": "IIFE" } 
+                  { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.umd.js#core", "module": "UMD" }
+                , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.cjs.js#core", "module": "CommonJS" }
+                , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.js#core", "module": "IIFE" } 
                 ]
             }
         }

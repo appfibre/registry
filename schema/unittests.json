@@ -1,0 +1,79 @@
+{ "$id": "http://registry.appfibre.org/schema/unittests.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema for jst unit tests",
+  "type": "object",
+  "properties": {
+    "test": {"$ref": "#/definitions/testCollection"}
+  },
+  "definitions": {
+      "testCollection": {
+          "type": "object",
+          "patternProperties": {
+            "^[^$]": {"anyOf": [ {"$ref": "#/definitions/test"}, {"type": "array", "items":  {"$ref": "#/definitions/test"}} ], "description": "Name of test"}
+          }
+      },
+      "test": {
+          "type": "object",
+          "properties": {
+            "$test": {"anyOf": [{"$ref": "http://registry.appfibre.org/schema/jst.json"}, {"type": "array"}, {"type": "boolean"}, {"type": "integer"}, {"type": "null"}, {"type": "number"}, {"type": "string"}]},
+            "name": { "type":"string" },
+            "description": { "type":"string" },
+            "message": { "type":"string" },
+            "mustBeOfType": { "$ref": "#/definitions/types" },
+            "mustNotBeOfType": { "$ref": "#/definitions/types" }
+          },
+          "oneOf": 
+            [ {"$ref": "#/definitions/mustEqual"}
+            , {"$ref": "#/definitions/mustNotEqual"}
+            , {"$ref": "#/definitions/shouldThrow"}
+            , {"$ref": "#/definitions/shouldNotThrow"}
+            ]
+      },
+      "types": {
+        "type":"string",
+        "enum": [ "object", "array", "boolean", "integer", "null", "number", "string" ]
+      },
+      "mustEqual": {
+        "properties": {
+            "$test": {},
+            "name": {},
+            "description": {},
+            "mustBeOfType": { },
+            "mustNotBeOfType": { },
+            "mustEqual": {}
+        }, "additionalProperties": false
+      },
+      "mustNotEqual": {
+        "properties": {
+            "$test": {},
+            "name": {},
+            "description": {},
+            "mustBeOfType": { },
+            "mustNotBeOfType": { },
+            "mustNotEqual": {}
+        }, "additionalProperties": false
+      },
+      "shouldThrow": {
+        "properties": {
+            "$test": {},
+            "name": {},
+            "description": {},
+            "mustBeOfType": {  },
+            "mustNotBeOfType": { },
+            "shouldThrow": {}
+        }, "additionalProperties": false
+      },
+      "shouldNotThrow": {
+        "properties": {
+            "$test": {},
+            "name": {},
+            "description": {},
+            "mustBeOfType": { },
+            "mustNotBeOfType": { },
+            "shouldNotThrow": {}
+        }, "additionalProperties": false
+        
+      }
+
+  }
+}

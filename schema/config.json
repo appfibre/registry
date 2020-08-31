@@ -9,7 +9,7 @@
           "type": "object",
           "additionalProperties": false,
           "patternProperties": {
-            "^\\$.*": { "$ref": "config-plugin.json" }
+            "^\\$.*": { "$ref": "./config-plugin.json" }
           }          
         },
         "settings": {
