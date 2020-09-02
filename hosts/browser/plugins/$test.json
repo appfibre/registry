@@ -1,0 +1,12 @@
+{   "$schema": "http://registry.appfibre.org/schema/config-plugin.json#5",
+    "schema": "$test TODO",
+    "processors": {
+        "default": [
+              { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.js", "module": "IIFE" }
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.cjs.js", "module": "CommonJS" }
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.es.js", "module": "ES" } 
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.umd.js", "module": "UMD" } 
+
+        ]
+    }
+}
