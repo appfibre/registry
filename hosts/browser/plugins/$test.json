@@ -2,10 +2,10 @@
     "schema": "$test TODO",
     "processors": {
         "default": [
-              { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.js", "module": "IIFE" }
-            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.cjs.js", "module": "CommonJS" }
-            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.es.js", "module": "ES" } 
-            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.umd.js", "module": "UMD" } 
+              { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.js", "module": "IIFE", "externals": ["util"] }
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.cjs.js", "module": "CommonJS", "externals": ["util"]  }
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.es.js", "module": "ES", "externals": ["util"]  } 
+            , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/test.umd.js", "module": "UMD", "externals": ["util"]  } 
 
         ]
     }

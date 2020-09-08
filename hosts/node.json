@@ -2,7 +2,7 @@
     "$schema": "http://registry.appfibre.org/schema/config.json#25",
     "plugins": {
           "$": {
-              "schema": "$ schema",
+              "schema": "TODO $",
               "processors": {
                 "default": [
                     { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#core", "module": "CommonJS" }
@@ -12,7 +12,7 @@
             "tests": { "src": "http://cdnjs.appfibre.org/bundles/plugins/tests/core.spec.json"}
           }
         , "$server": {
-            "schema": "$server schema",
+            "schema": "TODO $server",
             "processors": {
                 "default": [{ "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#server", "module": "CommonJS" }]
             },
