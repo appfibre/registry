@@ -5,8 +5,8 @@
               "schema": "TODO $",
               "processors": {
                 "default": [
-                    { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#core", "module": "CommonJS" }
-                    , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.es.js#core", "module": "ES" } 
+                    { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#core", "module": "CommonJS", "externals": ["process"] }
+                    , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.es.js#core", "module": "ES", "externals": ["process"] } 
                 ]
             },
             "tests": { "src": "http://cdnjs.appfibre.org/bundles/plugins/tests/core.spec.json"}
@@ -14,7 +14,7 @@
         , "$server": {
             "schema": "TODO $server",
             "processors": {
-                "default": [{ "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#server", "module": "CommonJS" }]
+                "default": [{ "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/server.cjs.js#server", "module": "CommonJS", "externals": ["process"] }]
             },
             "tests": { "src": "http://cdnjs.appfibre.org/bundles/plugins/tests/server.spec.json"}
         }
