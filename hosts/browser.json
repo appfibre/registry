@@ -5,12 +5,12 @@
               "schema": "TODO $",
               "processors": {
               "default": [
-                  { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.js", "module": "IIFE" }
-                , { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.umd.js", "module": "UMD" }
-                , { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.cjs.js", "module": "CommonJS" }
+                  { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.js", "module": "IIFE" }
+                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.umd.js", "module": "UMD" }
+                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.cjs.js", "module": "CommonJS" }
                 ]
             },
-            "tests": { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/tests/core.spec.json"}
+            "tests": { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
         }
     }, "settings": {
         "transform": ["application/jst", "application/json"]
