@@ -2,10 +2,10 @@
     "schema": "$test TODO",
     "processors": {
         "default": [
-              { "src": "https://unpkg.com/browse/@appfibre/bundles/plugins/test.js", "module": "IIFE", "externals": ["util"] }
-            , { "src": "https://unpkg.com/browse/@appfibre/bundles/plugins/test.cjs.js", "module": "CommonJS", "externals": ["util"]  }
-            , { "src": "https://unpkg.com/browse/@appfibre/bundles/plugins/test.es.js", "module": "ES", "externals": ["util"]  } 
-            , { "src": "https://unpkg.com/browse/@appfibre/bundles/plugins/test.umd.js", "module": "UMD", "externals": ["util"]  } 
+              { "src": "https://unpkg.com/@appfibre/bundles/plugins/test.js", "module": "IIFE", "externals": ["util"] }
+            , { "src": "https://unpkg.com/@appfibre/bundles/plugins/test.cjs.js", "module": "CommonJS", "externals": ["util"]  }
+            , { "src": "https://unpkg.com/@appfibre/bundles/plugins/test.es.js", "module": "ES", "externals": ["util"]  } 
+            , { "src": "https://unpkg.com/@appfibre/bundles/plugins/test.umd.js", "module": "UMD", "externals": ["util"]  } 
 
         ]
     }
