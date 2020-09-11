@@ -1,5 +1,5 @@
 {
-  "$id": "http://registry.appfibre.org/schema/jst.json#",
+  "$id": "https://registry.appfibre.org/schema/jst.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "JSON Schema for jst templates",
   "type": "object",
@@ -10,8 +10,8 @@
     "properties": {
       "$id": { "type": "string" }, 
       "$schema": { "anyOf" : [ { "type": "string" }, {"$ref": "http://json-schema.org/draft-07/schema#"} ] },
-      "$html": { "$ref": "http://registry.appfibre.org/schema/plugins/html.json#/properties/$html"}, 
-      "$require": { "$ref": "http://registry.appfibre.org/schema/plugins/require.json#/properties/$require" }
+      "$html": { "$ref": "https://registry.appfibre.org/schema/plugins/html.json#/properties/$html"}, 
+      "$require": { "$ref": "https://registry.appfibre.org/schema/plugins/require.json#/properties/$require" }
     }
     , "definitions": {
       "props": {

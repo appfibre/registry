@@ -1,5 +1,5 @@
 {
-    "$id": "http://registry.appfibre.org/draft-01",
+    "$id": "https://registry.appfibre.org/draft-01",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "JSON Schema for app fibre template",
     "properties": {

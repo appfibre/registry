@@ -1,16 +1,16 @@
 {
-    "$schema": "http://registry.appfibre.org/schema/config.json#20",
+    "$schema": "https://registry.appfibre.org/schema/config.json",
     "plugins": {
           "$": {
               "schema": "TODO $",
               "processors": {
               "default": [
-                  { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.js", "module": "IIFE" }
-                , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.umd.js", "module": "UMD" }
-                , { "src": "http://cdnjs.appfibre.org/bundles/plugins/dev/core.cjs.js", "module": "CommonJS" }
+                  { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.js", "module": "IIFE" }
+                , { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.umd.js", "module": "UMD" }
+                , { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/core.cjs.js", "module": "CommonJS" }
                 ]
             },
-            "tests": { "src": "http://cdnjs.appfibre.org/bundles/plugins/tests/core.spec.json"}
+            "tests": { "src": "https://unpkg.com/@appfibre/bundles@0.0.5/plugins/tests/core.spec.json"}
         }
     }, "settings": {
         "transform": ["application/jst", "application/json"]

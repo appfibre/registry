@@ -1,5 +1,5 @@
 {
-    "$id": "http://registry.appfibre.org/host/node/config.json#",
+    "$id": "https://registry.appfibre.org/host/node/config.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "JSON configuration for node host",
     "type": "object",

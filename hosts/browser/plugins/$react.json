@@ -1,4 +1,4 @@
-{   "$schema": "http://registry.appfibre.org/schema/config-plugin.json",
+{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
     "schema": "$REACT",
     "processors": {
         "default": [

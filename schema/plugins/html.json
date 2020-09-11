@@ -1,5 +1,5 @@
 {
-    "$id": "http://registry.appfibre.org/schema/plugins/html.json",
+    "$id": "https://registry.appfibre.org/schema/plugins/html.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "HTML",
     "type": "object",
@@ -45,7 +45,7 @@
                 , { "type": "object", "properties": {
                     "border": {"type": "string" } , "style": {"type": "string" }                     
                 } }
-                , {"anyOf": [{"$ref": "#/definitions/elements" }, {"type": "string"}, { "$ref": "http://registry.appfibre.org/schema/jst.json#/" } ]}
+                , {"anyOf": [{"$ref": "#/definitions/elements" }, {"type": "string"}, { "$ref": "https://registry.appfibre.org/schema/jst.json#/" } ]}
             ]
         }, "table": {
             "type":"array",

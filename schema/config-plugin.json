@@ -1,5 +1,5 @@
 {
-    "$id": "http://registry.appfibre.org/host/node/config-plugin",
+    "$id": "https://registry.appfibre.org/host/node/config-plugin",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Plugin-in definition",
     "type": "object",

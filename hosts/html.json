@@ -1,5 +1,5 @@
 {
-    "$schema": "http://registry.appfibre.org/schema/config.json#15",
+    "$schema": "https://registry.appfibre.org/schema/config.json",
     "plugins": {
           
     }

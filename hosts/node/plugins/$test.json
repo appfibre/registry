@@ -1,4 +1,4 @@
-{   "$schema": "http://registry.appfibre.org/schema/config-plugin.json#5",
+{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
     "schema": "$test TODO",
     "processors": {
         "default": [
