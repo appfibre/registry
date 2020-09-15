@@ -2,10 +2,10 @@
     "schema": "$PREACT",
     "processors": {
         "default": [
-              { "src": "http://cdnjs.appfibre.org/plugins/preact/dist/preact.js" , "module": "IIFE" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/preact/dist/preact-umd.js" , "module": "UMD" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/preact/dist/preact-cjs.js" , "module": "CommonJS" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/preact/dist/preact-es.js" , "module": "ES" }
+              { "src": "https://unpkg.com/@appfibre/plugins-preact/dist/preact.js" , "module": "IIFE" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-preact/dist/preact-umd.js" , "module": "UMD" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-preact/dist/preact-cjs.js" , "module": "CommonJS" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-preact/dist/preact-es.js" , "module": "ES" }
         ]
     }
 }

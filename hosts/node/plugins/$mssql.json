@@ -2,11 +2,13 @@
     "schema": "$MSSQL TODO",
     "processors": {
         "default": [
-            { "src": "http://cdnjs.appfibre.org/plugins/tedious/dist/tedious-cjs.js"
+            { "src": "https://unpkg.com/@appfibre/plugins-tedious/dist/tedious-cjs.js"
             , "module": "CommonJS" 
-            , "externals": ["events", "punycode", "string_decoder", "stream", "tty", "os", "url", "buffer", "Buffer", "crypto", "tls", "http", "https", "assert", "zlib", "path", "fs", "net", "timers", "querystring", "process", "child_process", "dgram", "dns", "util", "readable-stream", "xmlbuilder", "sshpk", "constants", "setTimeout", "clearTimeout"]
+            , "externals": ["events", "punycode", "string_decoder", "stream", "tty", "os", "url", "buffer", "Buffer", "crypto", "tls",
+                 "http", "https", "assert", "zlib", "path", "fs", "net", "timers", "querystring", "process", "child_process", "dgram",
+                  "dns", "util", "readable-stream", "xmlbuilder", "sshpk", "constants", "setTimeout", "clearTimeout"]
             }
         ]
     },
-    "tests": { "src": "http://cdnjs.appfibre.org/plugins/tedious/dist/tedious.spec.json"}
+    "tests": { "src": "https://unpkg.com/@appfibre/plugins-tedious/dist/tedious.spec.json"}
 }

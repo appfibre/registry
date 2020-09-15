@@ -10,7 +10,8 @@
                 , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.cjs.js", "module": "CommonJS" }
                 ]
             },
-            "tests": { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
+            "tests": [ { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
+                     , { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/html.spec.json"} ]
         }
     }, "settings": {
         "transform": ["application/jst", "application/json"]

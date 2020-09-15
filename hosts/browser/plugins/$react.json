@@ -2,10 +2,10 @@
     "schema": "$REACT",
     "processors": {
         "default": [
-              { "src": "http://cdnjs.appfibre.org/plugins/react/dist/react.js" , "module": "IIFE" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/react/dist/react-umd.js" , "module": "UMD" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/react/dist/react-cjs.js" , "module": "CommonJS" }
-            , { "src": "http://cdnjs.appfibre.org/plugins/react/dist/react-es.js" , "module": "ES" }
+              { "src": "https://unpkg.com/@appfibre/plugins-react/dist/react.js" , "module": "IIFE" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-react/dist/react-umd.js" , "module": "UMD" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-react/dist/react-cjs.js" , "module": "CommonJS" }
+            , { "src": "https://unpkg.com/@appfibre/plugins-react/dist/react-es.js" , "module": "ES" }
         ]
     }
 }
