@@ -20,7 +20,8 @@
             "description": { "type":"string" },
             "message": { "type":"string" },
             "mustBeOfType": { "$ref": "#/definitions/types" },
-            "mustNotBeOfType": { "$ref": "#/definitions/types" }
+            "mustNotBeOfType": { "$ref": "#/definitions/types" },
+            "ignoreWhitespace": { "type": "boolean" }
           },
           "oneOf": 
             [ {"$ref": "#/definitions/mustEqual"}
@@ -40,7 +41,8 @@
             "description": {},
             "mustBeOfType": { },
             "mustNotBeOfType": { },
-            "mustEqual": {}
+            "mustEqual": {},
+            "ignoreWhitespace": {}
         }, "additionalProperties": false
       },
       "mustNotEqual": {
@@ -50,7 +52,8 @@
             "description": {},
             "mustBeOfType": { },
             "mustNotBeOfType": { },
-            "mustNotEqual": {}
+            "mustNotEqual": {},
+            "ignoreWhitespace": {}
         }, "additionalProperties": false
       },
       "shouldThrow": {

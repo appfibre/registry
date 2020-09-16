@@ -9,7 +9,8 @@
                     , { "src": "https://unpkg.com/@appfibre/bundles/plugins/dev/server.es.js#core", "module": "ES", "externals": ["process"] } 
                 ]
             },
-            "tests": { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
+            "tests": [ { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
+                     , { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/html.spec.json"} ]
           }
         , "$server": {
             "schema": "TODO $server",
