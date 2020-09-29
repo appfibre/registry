@@ -16,10 +16,11 @@
         "properties": {
           "platforms": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/platform"}}, {"$ref": "#/definitions/platform"} ] }
           , "module": { "anyOf": [ {"type": "array", "items": {"$ref": "#/definitions/modulesystem"}}, {"$ref": "#/definitions/modulesystem"} ] }
-          , "externals": {"type": "array", "items": {"type": "string"}} 
+          , "externals": {"anyOf": [{"type": "array", "items": {"type": "string"}}, {"type":"object", "patternProperties": { "": { "type": "string" }}} ] }
           , "src": { "type": "string"}
+          , "bypassVM": { "type": "boolean"}
         },
-        "required": ["src", "module"]
+        "required": ["src"]
       },
       "platform": {
           "type": "string"

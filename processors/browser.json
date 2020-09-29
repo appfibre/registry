@@ -5,9 +5,9 @@
               "schema": "TODO $",
               "processors": {
               "default": [
-                  { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.js", "module": "IIFE" }
-                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.umd.js", "module": "UMD" }
-                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.cjs.js", "module": "CommonJS" }
+                  { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.js", "module": "IIFE", "externals": ["console"] }
+                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.umd.js", "module": "UMD", "externals": ["console"] }
+                , { "src": "https://unpkg.com/@appfibre/bundles/plugins/core.cjs.js", "module": "CommonJS", "externals": ["console"] }
                 ]
             },
             "tests": [ { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
