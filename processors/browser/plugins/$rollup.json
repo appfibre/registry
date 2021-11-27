@@ -1,0 +1,11 @@
+{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$rollup",
+    "processors": {
+        "default":[
+            { "src": "https://unpkg.com/@appfibre/plugins-rollup/dist/rollup.js" , "module": "IIFE", "bypassVM": true, "externals":["global"]}
+          , { "src": "https://unpkg.com/@appfibre/plugins-rollup/dist/rollup-umd.js" , "module": "UMD", "bypassVM": true, "externals":["global"]}
+          , { "src": "https://unpkg.com/@appfibre/plugins-rollup/dist/rollup-cjs.js" , "module": "CommonJS", "bypassVM": true, "externals":["global"]}
+          , { "src": "https://unpkg.com/@appfibre/plugins-rollup/dist/rollup-es.js" , "module": "ES", "bypassVM": true, "externals":["global"]}
+      ]
+    }
+}

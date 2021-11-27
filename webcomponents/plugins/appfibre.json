@@ -1,9 +1,9 @@
 {   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
-    "schema": "$monaco TODO",
+    "schema": "$appfibre TODO",
     "processors": {
         "default": [
               { "src": "https://unpkg.com/@appfibre/bundles/plugins/dev/webcomponents.js", "externals": {
-                      "Promise": null, "console": null, "HTMLElement": null
+                  "loader": "https://unpkg.com/monaco-editor/dev/vs/loader.js", "Promise": null, "console": null, "HTMLElement": null
                   } , "bypassVM": true
                 }
         ]

@@ -1,0 +1,8 @@
+{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$material web components schema",
+    "processors": {
+        "default": [
+              { "src": "https://unpkg.com/@appfibre/plugins-polymer/dist/dev/polymer-cjs.js", "externals": ["HTMLElement"], "bypassVM": true}
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$rollup",
+    "processors": {
+        "default": [
+              { "src": "http://localhost/@appfibre/plugins/rollup/dist/rollup.js" , "module": "IIFE" }
+        ]
+    }
+}
