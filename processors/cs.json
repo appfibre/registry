@@ -1,0 +1,26 @@
+{
+    "$schema": "https://registry.appfibre.org/schema/config.json",
+    "plugins": {
+          "$": {
+              "schema": "TODO $",
+              "processors": {
+                "default": [
+                    { "src": "https://unpkg.com/@appfibre/bundles/plugins/dev/server.cjs.js#core", "module": "CommonJS", "externals": ["process"] }
+                    , { "src": "https://unpkg.com/@appfibre/bundles/plugins/dev/server.es.js#core", "module": "ES", "externals": ["process"] } 
+                ]
+            },
+            "tests": [ { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/core.spec.json"}
+                     , { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/html.spec.json"} ]
+          }
+        , "$server": {
+            "schema": "TODO $server",
+            "processors": {
+                "default": [{ "src": "https://unpkg.com/@appfibre/bundles/plugins/dev/server.cjs.js#server", "module": "CommonJS", "externals": ["process"] }]
+            },
+            "tests": { "src": "https://unpkg.com/@appfibre/bundles/plugins/tests/server.spec.json"}
+        }
+    },
+    "settings": {
+        "transform": "application/jst"
+    }
+}

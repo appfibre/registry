@@ -1,0 +1,11 @@
+{
+    "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$request",
+    "processors": {
+        "default": [
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/Debug/netstandard1.0/appfibre.plugins.core.dll", "framework": "netstandard2.0", "externals": ["process"] }
+            , { "src": "file://Users/DawidRautenbach/code/appfibre/development/cs/plugins/appfibre.plugins.core/bin/Debug/appfibre.plugins.core.1.0.0.nupkg", "framework": "netcoreapp3.1", "externals": ["process"] } 
+            , { "src": "file://Users/DawidRautenbach/code/appfibre/development/cs/plugins/appfibre.plugins.core/bin/Debug/appfibre.plugins.core.1.0.0.nupkg", "framework": "net5.0", "externals": ["process"] } 
+        ]
+    }
+}
