@@ -19,6 +19,7 @@
           , "externals": {"anyOf": [{"type": "array", "items": {"type": "string"}}, {"type":"object", "patternProperties": { "": { "type": "string" }}} ] }
           , "src": { "type": "string"}
           , "bypassVM": { "type": "boolean"}
+          , "class": { "type": "string" } 
         },
         "required": ["src"]
       },
