@@ -1,0 +1,13 @@
+{
+    "$id": "https://registry.appfibre.org/schema/fz.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Fibre Zip File Configuration (.fz/.config)",
+    "type": "object",
+      "properties": {
+            "port": {
+                "type": "integer"
+            },
+            "additionalProperties": false
+      },
+      "required": []
+}
