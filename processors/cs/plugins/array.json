@@ -2,7 +2,11 @@
     "schema": "$array TODO",
     "processors": {
         "array.sort": [
-              { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Array.Sort" } 
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Array.Sort" } 
+        ], "array.reverse": [
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Array.Reverse" } 
+        ], "array.union": [
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Array.Union" } 
         ]
     }
 }   

@@ -1,0 +1,8 @@
+﻿{   "$schema": "https://registry.appfibre.org/schema/config-plugin.json",
+    "schema": "$string TODO",
+    "processors": {
+        "string.concat": [
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "String.Concat" } 
+        ]
+    }
+}   

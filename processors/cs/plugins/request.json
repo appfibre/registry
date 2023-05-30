@@ -3,6 +3,12 @@
     "processors": {
         "request.method": [
               { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Request.Method" } 
-        ]
+        ], "request.querystring": [
+            { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Request.QueryString" } 
+      ], "request.path": [
+        { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Request.Path" } 
+      ], "request.body": [
+        { "src": "https://plugins.cs/appfibre.plugins.core/bin/debug/netstandard1.0/appfibre.plugins.core.dll", "class": "Request.Body" } 
+      ]
     }
 }
